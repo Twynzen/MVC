@@ -10,3 +10,9 @@
     <input type="submit" value="Ingresar">
 
   </form>
+<?php
+
+$ingreso = AdminC();
+$ingreso -> IngresoC();
+
+ ?>
