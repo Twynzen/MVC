@@ -1,8 +1,8 @@
 <?php
 
-require_once 'conexionBD.php';
+require_once 'ConexionBD.php';
 
-class AdminM extends conexionBD{
+class AdminM extends ConexionBD{
 
   static public function IngresoM($datosC, $tablaBD){
 
