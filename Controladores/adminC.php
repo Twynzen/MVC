@@ -10,7 +10,7 @@ class AdminC{
 
         $tablaBD = "administradores";
 
-        $respesta = AdminM::IngresoM($datosC, $tablaBD);
+        $respuesta = AdminM::IngresoM($datosC, $tablaBD);
 
       if ($respuesta["usuario"] == $_POST["usuarioI"]&& $respuesta["clave"] == $_POST["claveI"]) {
 
