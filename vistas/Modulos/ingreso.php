@@ -1,7 +1,7 @@
 <br>
   <h1>INGRESAR</h1>
 
-  <form  action="" method="post">
+  <form   method="post">
 
     <input type="text" placeholder="Usuario" name="usuarioI" required>
 
