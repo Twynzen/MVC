@@ -2,7 +2,7 @@
 
 require_once "ConexionBD.php";
 
-class Empleados extends ConexionBD{
+class EmpleadosM extends ConexionBD{
 
   static public function RegistrarEmpleadosM($datosC, $tablaBD){
 
