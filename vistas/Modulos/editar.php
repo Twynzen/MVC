@@ -20,6 +20,8 @@ if (!$_SESSION["Ingreso"]) {
     $editar = new EmpleadosC();
     $editar -> EditarEmpleadosC();
 
+		$actualizar = new EmpleadosC();
+		$actualizar -> ActualizarEmpleadoC();
      ?>
 
 

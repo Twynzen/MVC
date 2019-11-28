@@ -80,6 +80,32 @@ public function MostrarEmpleadosC(){
 
   }
 
-}
+//Actualizar empleados
+
+  public function ActualizarEmpleadoC(){
+
+    if(isset($_POST["nombreE"])){
+
+    $datosC = array("id"=>$_POST["idE"], "nombre"=>$_POST["nombreE"],
+    "apellido"=>$_POST["apellidoE"], "email"=>$_POST["emailE"],
+     "puesto"=>$_POST["puestoE"], "salario"=>$_POST["salarioE"]);
+    $tablaBD = "empleados";
+
+    $respuesta = EmpleadosM::ActualizarEmpleadosM($datosC, $tablaBD);
+
+    if ($respuesta == "Bien") {
+
+      header("location:index.php?ruta=empleados");
+
+    }else {
+        echo "error";
+        }
+
+      }
+  }
+
+  }
+
+
 
  ?>
