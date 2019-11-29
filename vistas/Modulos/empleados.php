@@ -31,7 +31,7 @@ if (!$_SESSION["Ingreso"]) {
 
 		<tbody>
 
-			
+
 			<?php
 
 			$mostrar = new EmpleadosC();
@@ -42,9 +42,9 @@ if (!$_SESSION["Ingreso"]) {
 
 	</table>
 
+<?php
 
-</section>
+$eliminar = new EmpleadosC();
+$eliminar -> BorrarEmpleadosC();
 
-</body>
-
-</html>
+ ?>
